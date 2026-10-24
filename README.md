@@ -1,0 +1,1 @@
+# osaka-travel-2026
