@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#1f2f45">
+<meta name="description" content="2026 大阪 5 天 4 夜個人旅遊手冊：航班、每日行程、交通與行前清單。">
+<title>大阪旅行手冊｜2026.11.07–11.11</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;900&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1f2f45; --paper:#f2f4f6; --card:#ffffff; --line:#d5dbe2;
+  --maple:#b3302b; --ginkgo:#c99a2e; --muted:#5b6878; --hero:#1f2f45; --herotext:#f2f4f6;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){--ink:#e6ebf1;--paper:#141c28;--card:#1b2635;--line:#2d3b4f;--maple:#ef7a73;--ginkgo:#e3b955;--muted:#9aa7b8;--hero:#0e1520;--herotext:#e6ebf1}
+}
+:root[data-theme="dark"]{--ink:#e6ebf1;--paper:#141c28;--card:#1b2635;--line:#2d3b4f;--maple:#ef7a73;--ginkgo:#e3b955;--muted:#9aa7b8;--hero:#0e1520;--herotext:#e6ebf1}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+*{box-sizing:inherit}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 16px/1.75 "Noto Sans TC",system-ui,-apple-system,sans-serif}
+a{color:inherit}
+.hero{background:var(--hero);color:var(--herotext);padding:56px 22px 40px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:var(--maple);opacity:.9}
+.hero small{display:block;position:relative;z-index:1;opacity:.8;letter-spacing:.08em}
+.hero h1{position:relative;z-index:1;margin:10px 0 6px;font:900 clamp(56px,18vw,104px)/1 "Noto Serif TC",serif;letter-spacing:.04em}
+.hero p{position:relative;z-index:1;margin:0;max-width:30em;opacity:.9}
+nav{position:sticky;top:0;z-index:5;display:flex;gap:4px;overflow-x:auto;background:var(--paper);border-bottom:1px solid var(--line);padding:calc(env(safe-area-inset-top,0px) + 8px) 12px 8px}
+nav button{flex:none;border:0;background:none;color:var(--muted);font:500 15px "Noto Sans TC",sans-serif;padding:8px 14px;border-radius:999px;cursor:pointer}
+nav button[aria-selected="true"]{background:var(--ink);color:var(--paper)}
+nav button:focus-visible,.days button:focus-visible{outline:3px solid var(--ginkgo);outline-offset:2px}
+main{max-width:720px;margin:0 auto;padding:24px 18px 80px}
+section[hidden]{display:none}
+h2{font:900 26px/1.3 "Noto Serif TC",serif;margin:0 0 14px}
+h3{font:600 18px/1.4 "Noto Serif TC",serif;margin:0 0 6px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:0 0 14px}
+.box h3{color:var(--maple)}
+dl{margin:0;display:grid;grid-template-columns:5.5em 1fr;gap:6px 12px}
+dt{color:var(--muted)} dd{margin:0}
+.todo{color:var(--muted);font-style:italic}
+.days{display:flex;gap:8px;overflow-x:auto;margin:0 0 18px;padding-bottom:4px}
+.days button{flex:none;min-width:64px;text-align:center;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:8px 10px;font:500 13px/1.3 "Noto Sans TC",sans-serif;cursor:pointer}
+.days button b{display:block;font:900 20px "Noto Serif TC",serif}
+.days button[aria-selected="true"]{background:var(--maple);border-color:var(--maple);color:#fff}
+.slot{display:grid;grid-template-columns:3.6em 1fr;gap:4px 14px;padding:14px 0;border-top:1px solid var(--line)}
+.slot:first-of-type{border-top:0}
+.slot time{color:var(--ginkgo);font-weight:700}
+.slot p{margin:0;color:var(--muted)}
+.tip{border-left:4px solid var(--ginkgo);padding:4px 0 4px 14px;margin:16px 0 0;color:var(--muted)}
+ul.plain{margin:0;padding-left:1.2em} ul.plain li{margin:4px 0}
+.check{list-style:none;padding:0;margin:0}
+.check li{padding:10px 0;border-top:1px solid var(--line)}
+.check label{display:flex;gap:12px;align-items:flex-start;cursor:pointer}
+.check input{width:20px;height:20px;margin-top:4px;accent-color:var(--maple)}
+.check input:checked+span{text-decoration:line-through;opacity:.55}
+.bud{width:100%;border-collapse:collapse}
+.bud th{font-weight:500;color:var(--muted);text-align:right;padding:0 0 8px;font-size:14px}
+.bud th:first-child{text-align:left}
+.bud td{padding:6px 0;border-top:1px solid var(--line)}
+.bud td:first-child{padding-right:8px}
+.bud td+td{padding-left:8px;width:30%}
+.bud input{width:100%;font:inherit;text-align:right;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:6px 8px}
+.bud input:focus-visible{outline:3px solid var(--ginkgo);outline-offset:1px}
+.bud tfoot td{font-weight:700;border-top:2px solid var(--ink);text-align:right}
+.bud tfoot td:first-child{text-align:left}
+.ppl{display:flex;align-items:center;gap:10px;margin:0 0 14px}
+.ppl input{width:5em;font:inherit;text-align:center;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:6px}
+.sum{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.sum div{background:var(--paper);border-radius:8px;padding:10px 12px}
+.sum small{display:block;color:var(--muted)}
+.sum b{font:900 20px "Noto Serif TC",serif}
+.row2{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 14px}
+.row2 input,.row2 select,.fld input,.fld select{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:7px 8px;min-width:0}
+.row2 input[type=number]{width:6em;text-align:center}
+.fld{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px}
+.fld .wide{grid-column:1/-1}
+.fld input,.fld select{width:100%}
+.btn{font:500 15px "Noto Sans TC",sans-serif;border:0;border-radius:8px;background:var(--maple);color:#fff;padding:9px 16px;cursor:pointer}
+.btn:focus-visible,.x:focus-visible{outline:3px solid var(--ginkgo);outline-offset:2px}
+.log{list-style:none;margin:14px 0 0;padding:0}
+.log li{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:8px 0;border-top:1px solid var(--line)}
+.log small{display:block;color:var(--muted)}
+.x{border:0;background:none;color:var(--muted);font-size:20px;line-height:1;cursor:pointer;padding:4px 8px}
+.settle{margin-top:14px;padding:12px 14px;border-left:4px solid var(--maple);background:var(--paper);border-radius:0 8px 8px 0}
+.shop{list-style:none;margin:0;padding:0}
+.shop li{display:flex;align-items:center;gap:10px;padding:10px 0;border-top:1px solid var(--line)}
+.shop li:first-child{border-top:0}
+.shop label{flex:1;display:flex;gap:12px;align-items:center;cursor:pointer}
+.shop input[type=checkbox]{width:20px;height:20px;accent-color:var(--maple)}
+.shop input:checked+span{text-decoration:line-through;opacity:.55}
+.add{display:flex;gap:8px;margin-top:14px}
+.add input{flex:1;min-width:0;font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+.paid{width:100%;border-collapse:collapse}
+.paid td{padding:6px 4px 6px 0;border-top:1px solid var(--line);vertical-align:middle}
+.paid td:first-child{width:34%}
+.paid input,.paid select{width:100%;font:inherit;color:var(--ink);background:var(--paper);border:1px solid var(--line);border-radius:8px;padding:6px 6px;min-width:0}
+.paid input.txt{background:transparent;border-color:transparent;padding-left:0}
+.rate-info{color:var(--muted);font-size:14px;margin:-6px 0 16px}
+.rate-info a{color:var(--muted)}
+footer{max-width:720px;margin:0 auto;padding:0 18px 40px;color:var(--muted);font-size:13px}
+@media (prefers-reduced-motion:no-preference){.hero h1{animation:rise .7s ease-out both}@keyframes rise{from{opacity:0;transform:translateY(14px)}}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <small>2026.11.07 – 11.11　5 天 4 夜</small>
+  <h1>大阪</h1>
+  <p>楓紅時節的關西旅行手冊。以大阪為基地，一天去勝尾寺賞楓、一天去京都。</p>
+</header>
+
+<nav role="tablist" aria-label="手冊分頁">
+  <button role="tab" data-page="overview" aria-selected="true">總覽</button>
+  <button role="tab" data-page="itinerary" aria-selected="false">每日行程</button>
+  <button role="tab" data-page="transport" aria-selected="false">交通</button>
+  <button role="tab" data-page="budget" aria-selected="false">預算</button>
+  <button role="tab" data-page="shopping" aria-selected="false">購買清單</button>
+  <button role="tab" data-page="checklist" aria-selected="false">行前清單</button>
+</nav>
+
+<main id="main">
+  <section id="overview">
+    <h2>旅程總覽</h2>
+    <div class="box">
+      <h3>去程航班</h3>
+      <dl><dt>日期</dt><dd>11/7（六）</dd><dt>航班</dt><dd>Peach MM026</dd><dt>時間</dt><dd>13:40 桃園 T1 → 17:10 關西 T2（2 小時 30 分）</dd></dl>
+    </div>
+    <div class="box">
+      <h3>回程航班</h3>
+      <dl><dt>日期</dt><dd>11/11（三）</dd><dt>航班</dt><dd>Jetstar GK055</dd><dt>時間</dt><dd>14:55 關西 T1 → 17:15 桃園 T1（3 小時 20 分）</dd></dl>
+      <p class="tip">航班有異動，時間已更新。</p>
+    </div>
+    <div class="box">
+      <h3>住宿 1：11/7 – 11/9（2 晚）</h3>
+      <dl><dt>名稱</dt><dd>CityStay 難波南</dd><dt>地址</dt><dd>大阪市浪速區惠美須西 3-10-11<br><small>3-10-11 Ebisunishi, Naniwa-ku</small></dd><dt>入住</dt><dd>15:00 – 23:30</dd><dt>退房</dt><dd>11:00 前</dd></dl>
+    </div>
+    <div class="box">
+      <h3>住宿 2：11/9 – 11/11（2 晚）</h3>
+      <dl><dt>名稱</dt><dd>Hotel Morning Box Osaka Shinsaibashi</dd><dt>地址</dt><dd>大阪市中央區東心齋橋 1-10-3<br><small>1-10-3 Higashi Shinsaibashi, Chuo-ku</small></dd><dt>入住</dt><dd>15:00 – 24:00</dd><dt>退房</dt><dd>11:00 前</dd><dt>電話</dt><dd><a href="tel:+81662430777">+81 6-6243-0777</a></dd></dl>
+    </div>
+    <div class="box">
+      <h3>行程重點</h3>
+      <ul class="plain">
+        <li>11/7 傍晚抵達，先入住再去難波吃溫蒂漢堡</li>
+        <li>11/8 環球影城一整天，趕上萬聖驚魂夜最後一天</li>
+        <li>11/9 換飯店，勝尾寺賞楓，梅田／道頓堀自由逛街</li>
+        <li>11/10 京都和服巡禮：清水寺、二三年坂、八坂塔、祇園</li>
+        <li>11/11 黑門市場，下午搭機回台北</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="itinerary" hidden>
+    <h2>每日行程</h2>
+    <div class="days" role="tablist" aria-label="選擇日期" id="days"></div>
+    <div id="day-body"></div>
+  </section>
+
+  <section id="transport" hidden>
+    <h2>交通</h2>
+    <div class="box">
+      <h3>機場往返市區</h3>
+      <p>關西機場到市區可搭南海電鐵，Rapi:t 與空港急行都有停新今宮與難波。到難波約 40 分鐘。去程 Peach 在第 2 航廈 (T2)，回程 Jetstar 在第 1 航廈 (T1)。T2 至電車站可搭接駁巴士，跟隨機場指標前往。</p>
+    </div>
+    <div class="box">
+      <h3>市區移動</h3>
+      <p>大阪市區以地鐵為主。買一張 ICOCA（或把 Suica 加入 Apple / Google 錢包），地鐵、JR、私鐵、便利商店都能刷。</p>
+    </div>
+    <div class="box">
+      <h3>一日往返</h3>
+      <ul class="plain">
+        <li><b>京都</b>：阪急京都本線特急，梅田至京都河原町約 43 分鐘（¥410）；轉京都市巴士 207 號至清水道約 9 分鐘（¥230）</li>
+        <li><b>勝尾寺</b>：御堂筋線到箕面萱野，再轉阪急巴士，單程約 1 小時 20 分</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="budget" hidden>
+    <h2>預算與分帳</h2>
+    <p class="tip" style="margin:0 0 16px">金額單位為新台幣（元）。輸入的資料只存在這支手機的瀏覽器，別人看不到，也不會同步到其他裝置。</p>
+    <div class="row2">
+      <label for="people">人數</label><input id="people" type="number" min="1" value="2" inputmode="numeric">
+      <label for="rate">1 日圓 =</label><input id="rate" type="number" min="0" step="0.001" value="0.21" inputmode="decimal"><span>台幣</span>
+    </div>
+    <div class="row2" style="margin:-4px 0 6px"><button class="btn" id="rate-refresh" type="button">更新即時匯率</button></div>
+    <p class="rate-info" id="rate-info">正在取得即時匯率…</p>
+    <div class="box">
+      <h3>換算</h3>
+      <div class="row2" style="margin:0"><input id="jpy" type="number" min="0" inputmode="numeric" aria-label="日幣金額" placeholder="日圓"><span id="jpy-out">≈ NT$ 0</span></div>
+    </div>
+    <div class="box">
+      <h3>已付款項目</h3>
+      <table class="paid"><tbody id="paid-rows"></tbody></table>
+      <div class="sum">
+        <div><small>已付款合計（台幣）</small><b id="paid-total">0</b></div>
+        <div><small>已付款　平均每人</small><b id="paid-pp">0</b></div>
+      </div>
+      <div class="add"><input id="paid-new" aria-label="新增已付款項目名稱" placeholder="新增項目，例如：環球影城門票"><button class="btn" id="paid-add" type="button">新增</button></div>
+    </div>
+    <div class="box">
+      <h3>預算表</h3>
+      <table class="bud">
+        <thead><tr><th>項目</th><th>預估</th><th>實際</th></tr></thead>
+        <tbody id="bud-rows"></tbody>
+        <tfoot><tr><td>合計</td><td id="t-est">0</td><td id="t-act">0</td></tr></tfoot>
+      </table>
+      <p style="color:var(--muted);font-size:14px;margin:10px 0 0">「實際」自動加總已付款項目與下方記帳。</p>
+      <div class="sum">
+        <div><small>預估　平均每人</small><b id="p-est">0</b></div>
+        <div><small>實際　平均每人</small><b id="p-act">0</b></div>
+      </div>
+    </div>
+    <div class="box">
+      <h3>記帳與分帳</h3>
+      <div class="fld">
+        <input id="n0" aria-label="第一位名字" value="我">
+        <input id="n1" aria-label="第二位名字" value="同行者">
+        <input id="e-desc" class="wide" aria-label="說明" placeholder="說明，例如：章魚燒">
+        <input id="e-amt" type="number" min="0" inputmode="decimal" aria-label="金額" placeholder="金額">
+        <select id="e-cur" aria-label="幣別"><option value="JPY">日圓</option><option value="TWD">台幣</option></select>
+        <select id="e-cat" aria-label="類別"></select>
+        <select id="e-payer" aria-label="付款人"></select>
+      </div>
+      <button class="btn" id="e-add" type="button">新增一筆</button>
+      <ul class="log" id="log"></ul>
+      <div class="settle" id="settle">還沒有記帳。</div>
+      <p style="color:var(--muted);font-size:14px;margin:10px 0 0">每筆都由兩人平均分攤。</p>
+    </div>
+  </section>
+
+  <section id="shopping" hidden>
+    <h2>購買清單</h2>
+    <div class="box">
+      <ul class="shop" id="shop-list"></ul>
+      <div class="add"><input id="shop-new" aria-label="新增購買項目" placeholder="新增項目"><button class="btn" id="shop-add" type="button">新增</button></div>
+    </div>
+  </section>
+
+  <section id="checklist" hidden>
+    <h2>行前清單</h2>
+    <ul class="check" id="check-list"></ul>
+  </section>
+</main>
+
+<footer>最後更新：2026.10.26。營業時間與票價以官方公告為準。</footer>
+
+<script>
+const DAYS = [
+  {d:"11/7",w:"六",t:"抵達大阪",slots:[
+    ["13:40","桃園 T1 起飛","Peach MM026，17:10 抵達關西機場 T2。"],
+    ["17:10","入境、領行李、換 ICOCA","預留入境與領行李的時間。"],
+    ["18:30","搭南海電鐵至新今宮站","Rapi:t 與空港急行皆停靠新今宮，帶行李建議搭乘 Rapi:t。"],
+    ["19:30","入住 CityStay 難波南","入住時間至 23:30，先放行李。"],
+    ["20:15","前往難波","自新今宮搭電車或步行前往。"],
+    ["20:30","溫蒂漢堡晚餐（難波）","抵達大阪的第一餐。"]
+  ],tip:"第一天行程從簡，早點休息。"},
+  {d:"11/8",w:"日",t:"環球影城",slots:[
+    ["06:30","新今宮出發，前往環球影城","JR 新今宮站搭大阪環狀線外回（往西九條、大阪方向），於西九條轉 JR 夢咲線至「環球城（Universal City）」站。部分環狀線列車直通夢咲線，無需轉車，全程約 30 至 40 分鐘。"],
+    ["07:30","抵達園區，排隊入園",""],
+    ["09:00","環球影城一整天","依想玩的設施與區域安排動線。"],
+    ["11:30","園內午餐","提早用餐可避開尖峰。"],
+    ["18:00","萬聖驚魂夜：街頭殭屍、殭屍群舞","街頭殭屍 18:00 起至閉園，遍及園區（部分區域除外）。11/8 為今年活動最後一天。"],
+    ["19:30","搭 JR 返回新今宮，附近晚餐",""]
+  ],tip:"入場券須指定來園日期（11/8）。今年萬聖驚魂夜為 9/11 至 11/8，最後一天人潮較多。超級任天堂世界可能需要區域入場券，部分表演可能需另行購票或抽選。"},
+  {d:"11/9",w:"一",t:"換飯店、勝尾寺與大阪夜遊",slots:[
+    ["09:00","CityStay 退房","行李寄放至 Hotel Morning Box。"],
+    ["09:30","寄放行李至 Hotel Morning Box","入住時間 15:00 – 24:00。"],
+    ["10:00","搭御堂筋線往箕面萱野","心齋橋站上車，約 35 分鐘，約 10:35 抵達。搭乘開往「箕面萱野」的列車。"],
+    ["11:00","搭阪急巴士前往勝尾寺","特急 30（直行）約 20 分鐘，車資約 ¥800，乘車處 8 號。去程每小時 00 分與 30 分發車，搭乘 11:00 班次。"],
+    ["11:20","抵達勝尾寺","滿山的勝運達摩與楓葉。入山 ¥500，開放 8:00 – 17:00，停留約 2.5 小時。"],
+    ["13:50","搭巴士返回箕面萱野，轉地鐵回梅田","回程班次每小時 20 分與 50 分發車，最後一班 17:05。巴士約 25 分鐘，地鐵約 25 分鐘，約 14:45 回到梅田。"],
+    ["15:00","梅田至道頓堀自由逛街","友都八喜梅田店、美國村、心齋橋筋商店街皆可順路。"],
+    ["19:30","炭火烤肉 道頓堀みつる（道頓堀總店）","Shibata Bld 2 樓，已預約。"],
+    ["21:30","步行返回 Hotel Morning Box","約 11 分鐘。"]
+  ],tip:"勝尾寺來回交通約 3 小時，傍晚天黑得早，建議 15:00 前離開寺院。"},
+  {d:"11/10",w:"二",t:"京都和服巡禮：清水寺、二三年坂、祇園",slots:[
+    ["07:15","自飯店出發","步行至心齋橋站，搭御堂筋線至梅田，再步行至阪急大阪梅田站。"],
+    ["07:45","阪急京都本線特急往京都河原町","約 43 分鐘，¥410，約 08:30 抵達。"],
+    ["08:40","搭京都市巴士 207 號至清水道","車程約 9 分鐘，¥230，約 08:50 抵達。"],
+    ["08:50","清水道搭計程車至和服店","搭計程車直達清水寺附近的和服店門口，省下約 11 分鐘的上坡步行。"],
+    ["09:00","清水寺附近和服店換裝","換裝與整髮約 1 小時。選擇可跨店還衣的店家（祇園或八坂神社設有分店），拍攝結束後直接在祇園還衣。"],
+    ["10:00","清水寺","仁王門、三重塔，進入本堂與清水舞台，再至奧之院與音羽瀑布，寺內為單向參拜。攝影師於舞台與本堂周邊拍攝，停留約 1.5 小時。"],
+    ["11:30","清水坂、三年坂","清水坂試吃生八橋，三年坂石階坡道與雜貨店、抹茶冰品，約 1 小時。"],
+    ["12:30","二年坂午餐","二年坂周邊有龍貓共和國與榻榻米星巴克，午餐後邊逛邊拍，約 1 小時。"],
+    ["13:30","八坂通、八坂塔、八坂庚申堂","八坂塔街景是經典拍攝點，順遊猴子神社，約 1 小時。"],
+    ["14:30","寧寧之道、八坂神社、花見小路","沿路往祇園方向，約 1 小時。"],
+    ["15:30","祇園分店還衣","跨店還衣。"],
+    ["15:45","四条河原町逛街","祇園至河原町步行約 10 分鐘，錦市場與河原町商店街。"],
+    ["17:00","阪急返回大阪","京都河原町至梅田特急約 43 分鐘，約 17:45 抵達梅田。"],
+    ["18:00","梅田、心齋橋、難波逛街與晚餐","市區自由活動。"],
+    ["20:00","返回 Hotel Morning Box","明天 14:55 航班，早點休息。"]
+  ],tip:"清水寺至祇園全程由上往下，沿路皆為石板與階梯，穿和服與木屐步伐放慢。"},
+  {d:"11/11",w:"三",t:"回程",slots:[
+    ["09:00","黑門市場早餐與伴手禮","店家開門時間不一。"],
+    ["10:00","退房，前往關西機場","自難波搭南海電鐵約 40 分鐘，Jetstar 位於第 1 航廈（T1）。"],
+    ["11:30","抵達機場，辦理登機與退稅","建議起飛前 3 小時抵達。"],
+    ["14:55","關西起飛","Jetstar GK055，17:15 抵達桃園 T1。"]
+  ],tip:"航班有異動，出發前確認最新時間。"}
+];
+const CHECK = ["護照（效期至少 6 個月以上）","Visit Japan Web 事先登錄入境與海關資料","機票與兩間住宿的訂單截圖（含訂位代號）","eSIM 或網卡","日幣現金與信用卡","ICOCA 或 Suica","行動電源與充電線（日本插座為兩孔 100V）","常備藥品與旅遊保險","折疊雨具與好走的鞋"];
+
+const $ = s => document.querySelector(s);
+const store = {
+  get(k){try{return localStorage.getItem(k)}catch(e){return null}},
+  set(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+};
+
+/* 分頁 */
+const pages = ["overview","itinerary","transport","budget","shopping","checklist"];
+function showPage(p){
+  if(!pages.includes(p)) p="overview";
+  pages.forEach(id=>{ $("#"+id).hidden = id!==p; });
+  document.querySelectorAll("nav button").forEach(b=>b.setAttribute("aria-selected", b.dataset.page===p));
+  if(location.hash!=="#"+p) history.replaceState(null,"","#"+p);
+  window.scrollTo(0,0);
+}
+document.querySelectorAll("nav button").forEach(b=>b.addEventListener("click",()=>showPage(b.dataset.page)));
+
+/* 每日行程 */
+function showDay(i){
+  const x = DAYS[i];
+  document.querySelectorAll("#days button").forEach((b,j)=>b.setAttribute("aria-selected", j===i));
+  $("#day-body").innerHTML = `<div class="box"><h3>${x.d}（${x.w}）${x.t}</h3>` +
+    x.slots.map(s=>`<div class="slot"><time>${s[0]}</time><div><b>${s[1]}</b>${s[2]?`<p>${s[2]}</p>`:""}</div></div>`).join("") +
+    `<p class="tip">${x.tip}</p></div>`;
+}
+$("#days").innerHTML = DAYS.map((x,i)=>`<button role="tab" aria-selected="false"><b>${x.d.split("/")[1]}</b>${x.w}</button>`).join("");
+document.querySelectorAll("#days button").forEach((b,i)=>b.addEventListener("click",()=>showDay(i)));
+showDay(0);
+
+/* 清單（勾選狀態存在本機瀏覽器） */
+let saved = {};
+try{ saved = JSON.parse(store.get("osaka-check")||"{}"); }catch(e){}
+$("#check-list").innerHTML = CHECK.map((t,i)=>`<li><label><input type="checkbox" data-i="${i}" ${saved[i]?"checked":""}><span>${t}</span></label></li>`).join("");
+$("#check-list").addEventListener("change",e=>{
+  saved[e.target.dataset.i] = e.target.checked;
+  store.set("osaka-check", JSON.stringify(saved));
+});
+
+/* 預算與分帳 */
+const ITEMS = ["機票","住宿","環球影城門票","交通（電車、地鐵）","餐飲","購物與伴手禮","其他"];
+let bud = {est:{},people:2,rate:0.21,rateAt:0,names:["我","同行者"],log:[],paid:[{d:"去程機票 Peach MM026",amt:"",cur:"TWD",cat:0,payer:0},{d:"回程機票 Jetstar GK055",amt:"",cur:"TWD",cat:0,payer:0},{d:"住宿 CityStay 難波南（11/7–11/9）",amt:"",cur:"TWD",cat:1,payer:0},{d:"住宿 Hotel Morning Box（11/9–11/11）",amt:"",cur:"TWD",cat:1,payer:0}]};
+try{ const b = JSON.parse(store.get("osaka-budget")||"null"); if(b) bud = Object.assign(bud,b); }catch(e){}
+const esc = t => String(t).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmt = n => Math.round(n).toLocaleString("zh-TW");
+const rate = () => parseFloat(bud.rate)>0 ? parseFloat(bud.rate) : 0;
+const toTWD = x => (parseFloat(x.amt)||0) * (x.cur==="JPY" ? rate() : 1);
+const saveBud = () => store.set("osaka-budget", JSON.stringify(bud));
+
+$("#bud-rows").innerHTML = ITEMS.map((t,i)=>
+  `<tr><td>${t}</td><td><input type="number" min="0" inputmode="numeric" data-i="${i}" aria-label="${t}預估" value="${bud.est[i]??""}"></td><td id="act-${i}" style="text-align:right">0</td></tr>`).join("");
+$("#e-cat").innerHTML = ITEMS.map((t,i)=>`<option value="${i}">${t}</option>`).join("");
+$("#people").value = bud.people || 2;
+$("#rate").value = bud.rate;
+$("#n0").value = bud.names[0]; $("#n1").value = bud.names[1];
+
+function drawPayers(){
+  const cur = $("#e-payer").value || "0";
+  $("#e-payer").innerHTML = bud.names.map((n,i)=>`<option value="${i}">${esc(n||("第"+(i+1)+"位"))}付</option>`).join("");
+  $("#e-payer").value = cur;
+}
+function calc(){
+  const n = Math.max(1, parseInt(bud.people)||1);
+  const act = ITEMS.map(()=>0);
+  const paid = [0,0];
+  bud.log.concat(bud.paid).forEach(x=>{ const v = toTWD(x); act[x.cat] += v; paid[x.payer] += v; });
+  const pt = bud.paid.reduce((a,x)=>a+toTWD(x),0);
+  $("#paid-total").textContent = fmt(pt); $("#paid-pp").textContent = fmt(pt/n);
+  ITEMS.forEach((_,i)=>{ $("#act-"+i).textContent = fmt(act[i]); });
+  const e = ITEMS.reduce((a,_,i)=>a+(parseFloat(bud.est[i])||0),0);
+  const a = act.reduce((x,y)=>x+y,0);
+  $("#t-est").textContent = fmt(e); $("#t-act").textContent = fmt(a);
+  $("#p-est").textContent = fmt(e/n); $("#p-act").textContent = fmt(a/n);
+
+  $("#log").innerHTML = bud.log.map((x,i)=>{
+    const unit = x.cur==="JPY" ? "¥" : "NT$ ";
+    return `<li><div>${esc(x.d||ITEMS[x.cat])}<small>${esc(bud.names[x.payer]||"")}付　${ITEMS[x.cat]}</small></div><div>${unit}${fmt(x.amt)}<button class="x" type="button" data-del="${i}" aria-label="刪除這筆">×</button></div></li>`;
+  }).join("");
+
+  const total = paid[0]+paid[1], diff = paid[0]-total/2;
+  let msg;
+  if(!bud.log.length && !(paid[0]+paid[1])) msg = "還沒有記帳。";
+  else if(bud.log.concat(bud.paid).some(x=>x.cur==="JPY") && !rate()) msg = "請先填入匯率，才能換算日圓。";
+  else if(Math.abs(diff)<0.5) msg = "兩人剛好打平，不用互相補錢。";
+  else {
+    const from = diff>0 ? 1 : 0, to = 1-from, amt = Math.abs(diff);
+    msg = `${esc(bud.names[from]||"第"+(from+1)+"位")} 要給 ${esc(bud.names[to]||"第"+(to+1)+"位")}：<b>NT$ ${fmt(amt)}</b>` + (rate()?`（約 ¥${fmt(amt/rate())}）`:"");
+  }
+  $("#settle").innerHTML = msg;
+  const j = parseFloat($("#jpy").value)||0;
+  $("#jpy-out").textContent = "≈ NT$ " + fmt(j*rate());
+}
+$("#bud-rows").addEventListener("input",e=>{
+  if(e.target.dataset.i===undefined) return;
+  bud.est[e.target.dataset.i] = e.target.value; calc(); saveBud();
+});
+$("#people").addEventListener("input",()=>{ bud.people = parseInt($("#people").value)||1; calc(); saveBud(); });
+$("#rate").addEventListener("input",()=>{ bud.rate = $("#rate").value; calc(); saveBud(); });
+$("#jpy").addEventListener("input",calc);
+["n0","n1"].forEach((id,i)=>$("#"+id).addEventListener("input",()=>{ bud.names[i] = $("#"+id).value; drawPayers(); drawPaid(); calc(); saveBud(); }));
+$("#e-add").addEventListener("click",()=>{
+  const amt = parseFloat($("#e-amt").value);
+  if(!(amt>0)){ $("#e-amt").focus(); return; }
+  bud.log.push({d:$("#e-desc").value.trim(),amt,cur:$("#e-cur").value,cat:+$("#e-cat").value,payer:+$("#e-payer").value});
+  $("#e-desc").value=""; $("#e-amt").value="";
+  calc(); saveBud();
+});
+$("#log").addEventListener("click",e=>{
+  const i = e.target.dataset.del; if(i===undefined) return;
+  bud.log.splice(+i,1); calc(); saveBud();
+});
+/* 已付款 */
+function drawPaid(){
+  const cur = x => `<select data-k="cur">${["TWD","JPY"].map(c=>`<option value="${c}" ${x.cur===c?"selected":""}>${c==="TWD"?"台幣":"日圓"}</option>`).join("")}</select>`;
+  const who = x => `<select data-k="payer">${bud.names.map((n,i)=>`<option value="${i}" ${+x.payer===i?"selected":""}>${esc(n||("第"+(i+1)+"位"))}</option>`).join("")}</select>`;
+  $("#paid-rows").innerHTML = bud.paid.map((x,i)=>`<tr data-i="${i}"><td><input class="txt" data-k="d" aria-label="項目" value="${esc(x.d)}"></td><td><input type="number" min="0" inputmode="decimal" data-k="amt" aria-label="金額" placeholder="金額" value="${x.amt}"></td><td>${cur(x)}</td><td>${who(x)}</td><td><button class="x" type="button" data-del="${i}" aria-label="刪除">×</button></td></tr>`).join("");
+}
+$("#paid-rows").addEventListener("input",e=>{
+  const tr = e.target.closest("tr"), k = e.target.dataset.k; if(!tr||!k) return;
+  bud.paid[+tr.dataset.i][k] = k==="payer" ? +e.target.value : e.target.value;
+  calc(); saveBud();
+});
+$("#paid-rows").addEventListener("click",e=>{
+  const i = e.target.dataset.del; if(i===undefined) return;
+  bud.paid.splice(+i,1); drawPaid(); calc(); saveBud();
+});
+$("#paid-add").addEventListener("click",()=>{
+  const d = $("#paid-new").value.trim(); if(!d){ $("#paid-new").focus(); return; }
+  bud.paid.push({d,amt:"",cur:"TWD",cat:+(ITEMS.findIndex(t=>t.startsWith("環球"))>=0 && d.includes("環球")?2:6),payer:0});
+  $("#paid-new").value=""; drawPaid(); calc(); saveBud();
+});
+
+/* 即時匯率 */
+function showRate(msg){
+  const t = bud.rateAt ? new Date(bud.rateAt).toLocaleString("zh-TW") : "";
+  $("#rate-info").innerHTML = msg + (t?`　最後更新：${t}`:"") + ``;
+}
+const RATE_SOURCES = [
+  {n:"Exchange Rate API", u:"https://open.er-api.com/v6/latest/JPY", f:j=>j&&j.rates&&j.rates.TWD},
+  {n:"Currency API (jsDelivr)", u:"https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/jpy.json", f:j=>j&&j.jpy&&j.jpy.twd},
+  {n:"Currency API (Pages)", u:"https://latest.currency-api.pages.dev/v1/currencies/jpy.json", f:j=>j&&j.jpy&&j.jpy.twd},
+  {n:"Currency API (備用)", u:"https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/jpy/twd.json", f:j=>j&&j.twd}
+];
+async function fetchRate(){
+  $("#rate-info").textContent = "正在取得即時匯率…";
+  const errs = [];
+  for(const src of RATE_SOURCES){
+    try{
+      const ctl = new AbortController(); const tm = setTimeout(()=>ctl.abort(),8000);
+      const r = await fetch(src.u,{cache:"no-store",signal:ctl.signal}); clearTimeout(tm);
+      if(!r.ok) throw new Error("HTTP "+r.status);
+      const v = parseFloat(src.f(await r.json()));
+      if(!(v>0.05 && v<1)) throw new Error("資料格式不符");
+      bud.rate = v.toFixed(4); bud.rateAt = Date.now(); bud.rateSrc = src.n;
+      $("#rate").value = bud.rate; calc(); saveBud();
+      showRate("已更新為即時匯率（"+src.n+"）。");
+      return;
+    }catch(e){ errs.push(src.n+"："+(e&&e.message||e)); }
+  }
+  showRate("無法取得即時匯率，目前使用 " + bud.rate + "，可手動修改。（" + errs.join("；") + "）");
+}
+$("#rate-refresh").addEventListener("click",fetchRate);
+
+/* 購買清單 */
+let shop = [{t:"復古相機",c:false},{t:"粉底液",c:false},{t:"離子夾",c:false},{t:"UQ",c:false}];
+try{ const v = JSON.parse(store.get("osaka-shop")||"null"); if(Array.isArray(v)) shop = v; }catch(e){}
+const saveShop = () => store.set("osaka-shop", JSON.stringify(shop));
+function drawShop(){
+  $("#shop-list").innerHTML = shop.map((x,i)=>`<li><label><input type="checkbox" data-i="${i}" ${x.c?"checked":""}><span>${esc(x.t)}</span></label><button class="x" type="button" data-del="${i}" aria-label="刪除">×</button></li>`).join("") || '<li class="todo">尚無項目。</li>';
+}
+$("#shop-list").addEventListener("change",e=>{ if(e.target.dataset.i===undefined) return; shop[+e.target.dataset.i].c = e.target.checked; saveShop(); });
+$("#shop-list").addEventListener("click",e=>{ const i = e.target.dataset.del; if(i===undefined) return; shop.splice(+i,1); drawShop(); saveShop(); });
+$("#shop-add").addEventListener("click",()=>{ const t = $("#shop-new").value.trim(); if(!t){ $("#shop-new").focus(); return; } shop.push({t,c:false}); $("#shop-new").value=""; drawShop(); saveShop(); });
+drawShop();
+
+drawPayers(); drawPaid(); calc(); showRate("使用上次儲存的匯率。"); fetchRate();
+
+showPage(location.hash.slice(1));
+</script>
+</body>
+</html>
